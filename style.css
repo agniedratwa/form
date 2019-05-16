@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+font-family: "DINCE-black"; /* descriptor */
+src: url("fonts/DINBlack/DINBlackRegular.otf");
+}
+
+@font-face {
+font-family: "DINCE-regular"; /* descriptor */
+src: url("fonts/DINRegular/DINRegular.ttf");
+}
+
+@font-face {
+font-family: "DINCE"; /* descriptor */
+src: url("fonts/DIN/DINLight.otf");
+}
+
+body{
+	width:100vw;
+	height:100vh;
+	color: #ffffff;
+	font-family:"DINCE";
+	font-size: 12px;
+	text-transform: uppercase;
+	position:relative;
+}
+
+.container{
+	margin:0 auto;
+	padding:0 20px 0 20px;
+}
+
+#background_image{
+	width:100%;
+	height:100%;
+	background-image:url(files/bgnoicons.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:cover;
+}
+
+.logo{
+	width:76px;
+	height:92px;
+	margin-top:20px;
+	background-image:url(files/logo.png);
+	background-repeat:no-repeat;
+	background-size:contain;
+	float:right;
+}
+
+.logo::after{
+	clear: both;
+	display: block;
+	content: '';
+
+}
+
+.introduction{
+	margin-top:20px;
+	width:500px;
+}
+
+.introduction h1{
+
+	color: #f8981d;
+	font-family: "DINCE-black";
+	font-size: 56px;
+	text-transform: uppercase;
+}
+
+.introduction h2{
+	color: #ffffff;
+	font-family: "DINCE-black";
+	font-size: 26px;
+	text-transform: uppercase;
+}
+
+.introduction #paragraph_one{
+
+	color: #ffffff;
+	font-family: DINCE;
+	font-size: 12px;
+	letter-spacing:2px;
+	text-transform: uppercase;
+	margin-top:20px;
+}
+
+.introduction #paragraph_two{
+
+	color: #f8981d;
+	font-family: DINCE-black;
+	font-size: 12px;
+	text-transform: uppercase;
+	margin-top:20px;
+}
+
+.split_screen{
+	margin-top:46px;
+	display:flex;
+	flex-direction:row;
+	justify-content:flex-start;
+	align-items:flex-start;
+
+}
+
+.orange_border{
+	width:800px;
+	height:282px;
+	background-image:url(files/orangeborder.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
+	position:relative;
+
+}
+
+#interested{
+
+	color: #f8981d;
+	font-family: "DINCE-black";
+	font-size: 37px;
+	position:absolute;
+	transform:translate(46px, -20px);
+}
+
+form{
+	width:100%;
+	height:100%;
+	padding:37px 46px 27px 46px;
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	align-content:space-between;
+	flex-wrap:wrap;
+
+}
+
+.window, select{
+	width:344px;
+	height:50px;
+	background-color:transparent;
+	border:1px solid orange;
+	color: #ffffff;
+	font-family: DINCE;
+	font-size: 12px;
+	text-transform:uppercase;
+	padding-left:20px;
+
+}
+
+.window::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #ffffff;
+  opacity: 1; /* Firefox */
+}
+
+.window::-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #ffffff;
+}
+
+.window::-ms-input-placeholder { /* Microsoft Edge */
+  color: #ffffff;
+}
+
+.window:invalid{
+ 
+
+}
+
+.window:focus:invalid {
+  outline: none;
+}
+
+.error {
+  width:100%;
+  height:100px;
+  font-size:20px;
+  color: white;
+  background-color: red;
+ 
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.error.active {
+  padding: 0.3em;
+}
+
+#checkboxes{
+	width:100%;
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	align-items:center;
+	letter-spacing:1.5px;
+}
+
+.checkbox{
+	width: 9px;
+	height: 9px;
+	border: 1px solid #f8981d;
+	background-color: #f8971d;
+}
+
+.submit_button{
+	float:right;
+	width: 57px;
+	height: 57px;
+	margin-right:46px;
+	background-color: #f8981d;
+	border:none;
+	background-image:url(files/blackarrow.png);
+	background-size:25px 16px;
+	background-repeat:no-repeat;
+	background-position:center;
+
+
+}
+
+.submit_button:hover{
+	background-color:rgb(100,100,100);
+}
+
+.map{
+	width: 228px;
+	height: 343px;
+	margin-left:68px;
+	background-image:url(files/map.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
+}
+
+footer{
+	width:100%;
+	position:absolute;
+	bottom:20px;
+}
+
+#bottom_strip{
+	width:100%;
+	height:50px;
+	background-image:url(files/bottomstrip.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
+	display:flex;
+	justify-content:flex-end;
+	align-items:center;
+}
+
+#paragraph_footer{
+	color: #ffffff;
+	font-family: "DINCE-black";
+	text-transform: uppercase;
+	font-size: 12px;
+}
+
+#paragraph_footer strong{
+	font-size:16px;
+}

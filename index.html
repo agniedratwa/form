@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Formularz</title>
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<link rel="stylesheet" type="text/css" href="style.css">
+    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<div id="background_image">
+		<header class="container">
+			<div class="logo"></div>
+		</header>
+		<main class="container">
+			<section class="introduction">
+				<h1>WELCOME ABOARD</h1>
+				<h2>STEP INSIDE FOR A UNIQUE EXPERIENCE.</h2>
+				<p id="paragraph_one">WE’RE NOT JUST SHOWCASING THE VERY LATEST IN WINDOW DESIGN AND TECHNOLOGY.<br> WE’RE BRINGING IT ALIVE, FOR YOU TO TOUCH, TRY, SEE AND HEAR.</p>
+				<p id="paragraph_two">IT’S INTERACTIVE, SURPRISING AND ON ITS WAY TO YOU SOON!</p>
+			</section>
+			<section class="split_screen">
+				<article class="left">
+					<div class="orange_border">
+						<p id="interested">interested?</p>
+						<form id="form" action="/my-handling-form-page" method="post">
+							<input class="window" type="text" name="user_name" placeholder="name" required ></input>
+							<select name="occupation" required>
+								<option value="" disabled selected>OCCUPATION</option>
+								<option value="nurse">Nurse</option>
+								<option value="doctor">Doctor</option>
+								<option value="meddicaladministration">Medical Admin</option>
+							</select>
+							<input class="window" type="text" name="user_mobile_number" placeholder="mobile*" required></input>
+							<input class="window" type="email" name="user_email" placeholder="email" required></input>
+							<select name="city" required>
+								<option value="" disabled selected>NEAREST CITY</option>
+								<option value="Warsaw">Warsaw</option>
+								<option value="Wroclaw">Wroclaw</option>
+								<option value="Lodz">Lodz</option>
+								<option value="Krakow">Krakow</option>
+							</select>
+							<div id="checkboxes">
+								<input class="checkbox" type="checkbox">I’M INTERESTED IN DAKEA ROADSHOW</input>
+								<input class="checkbox" type="checkbox">I’M INTERESTED IN DAKEA PRODUCTS</input>
+								<input class="checkbox" type="checkbox">I’M LOOKING FOR A SMART OFFER</input>
+							</div>	
+						
+					</div><!-- orange border -->
+					<button class="submit_button" type="submit" value=""></button>
+					</form>	
+				</article>
+				<div class="image">
+					<div class="map"></div>
+				</div>
+			</section>	
+		</main>	
+		<footer>
+			<div id="bottom_strip" class="container">
+				<p id="paragraph_footer">For more details pls call <strong>0 20 3598 1165</strong></p>
+			</div>
+			
+		</footer>
+	</div> <!-- background image -->
+</body>
+</html>	
